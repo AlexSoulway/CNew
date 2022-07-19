@@ -2,13 +2,15 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-void Searching (int a)
-{
+int n = Convert.ToInt32(Console.ReadLine());
+// void Searching (int a)
+// {
     int b = 1;
-    while (b <= a)
+    while (b <= n)
     {
         Console.WriteLine(Math.Pow(b, 3));
         b = b+1;
     }
-}
-Searching(5);
+    Console.WriteLine();
+// }
+// Searching(5);
