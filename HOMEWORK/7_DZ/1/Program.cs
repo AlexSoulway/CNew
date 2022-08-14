@@ -13,7 +13,7 @@ void Print(double[,] arr)
     {
         for (int j = 0; j < column_size; j++)
         {
-            Console.Write($"{arr[i, j]} ");
+            Console.Write($"{arr[i, j],6} ");
         }
         Console.WriteLine();
     }
