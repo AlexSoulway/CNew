@@ -16,7 +16,7 @@ void Print(int[,] arr)
     Console.WriteLine();
 }
 
-int[,] MassNums(int row, int column, int from, int to)
+int[,] Nums(int row, int column, int from, int to)
 {
     int[,] arr = new int[row, column];
 
@@ -26,7 +26,7 @@ int[,] MassNums(int row, int column, int from, int to)
     return arr;
 }
 
-void OrderElMin(int[,] arr)
+void Sort(int[,] arr)
 {
     int row_size = arr.GetLength(0);
     int column_size = arr.GetLength(1);
@@ -48,8 +48,8 @@ int row = int.Parse(Console.ReadLine());
 Console.Write("Enter the number of columns: ");
 int column = int.Parse(Console.ReadLine());
 
-int[,] arr_1 = MassNums(row, column, 0, 10);
+int[,] arr_1 = Nums(row, column, 0, 10);
 Print(arr_1);
 
-OrderElMin(arr_1);
+Sort(arr_1);
 Print(arr_1);
